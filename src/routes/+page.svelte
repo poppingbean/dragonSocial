@@ -2,8 +2,7 @@
   import { onMount } from 'svelte';
 
   // Load environment variables from Vite
-  const telegramBotUsername = import.meta.env.VITE_TELEGRAM_BOT_USERNAME;
-  const domainName = import.meta.env.VITE_DOMAIN_NAME;
+  const telegramBotUsername = 'drgSocial_bot';
   const botAuthUrl = `https://telegram.me/${telegramBotUsername}?start=auth`;
 
   let telegramId = '';

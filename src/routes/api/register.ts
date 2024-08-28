@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 import { MongoClient } from 'mongodb';
-
-const client = new MongoClient(process.env.MONGODB_URI as string);
+const MONGODB_URI = 'mongodb+srv://vercel-admin-user:܆RGFuY2hpbXZpZXQyMDE0YUBB@cluster0.rclxf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const client = new MongoClient(MONGODB_URI as string);
 
 export const POST: RequestHandler = async ({ request }) => {
   try {
